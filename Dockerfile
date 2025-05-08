@@ -4,7 +4,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # Install the desired npm packages globally
-RUN git clone https://github.com/MaBanguero/mcp_goline.git
+RUN npm i -g mcp-server-shopify
 
 # Revert to the node user for security purposes
 USER node
