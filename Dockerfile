@@ -4,7 +4,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # Install the desired npm packages globally
-RUN npm i -g @mcp-server-shopify/run-server
+RUN npm i -g @mcp-server-shopify/run-server@latest
 
 # Revert to the node user for security purposes
 USER node
